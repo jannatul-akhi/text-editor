@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+        
+</head>
+
+<body>
+    <section class="">
+        <div class="bg-sky-300 rounded-lg w-3/4 mx-auto pb-12">
+            <h1 class="text-center text-4xl mt-12 p-8">My Text Editor</h1>
+            <div class="border-2 bg-sky-200 border-blue-900 w-3/4 mx-auto">
+                <div class="flex justify-between mx-auto w-11/12 mb-6 mt-6">
+                    <div class="">
+                        <button id="btn-bold" type="button">
+                            <i class="fa-solid fa-b me-2"></i>
+                        </button>
+                        <button id="btn-italic" type="button">
+                            <i class="fa-solid fa-italic me-2"></i>
+                        </button>
+                        <button id="btn-underline" type="button">
+                            <i class="fa-solid fa-underline"></i>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button id="btn-left" type="button">
+                            <i class="fa-solid fa-align-left me-2"></i>
+                        </button>
+                        <button id="btn-center" type="button">
+                            <i class="fa-solid fa-align-center me-2"></i>
+                        </button>
+                        <button id="btn-right" type="button">
+                            <i class="fa-solid fa-align-right me-2"></i>
+                        </button>
+                        <button id="btn-justify" type="button">
+                            <i class="fa-solid fa-align-justify"></i>
+                        </button>  
+                    </div>
+                    <div class="flex justify-between">
+                        <input type="number" min="1" max="100" value="17" class="w-9 me-2" onchange="f1(this)">
+                        <button id="btn-transform">
+                            <h2 class="me-2">Aa</h2>
+                        </button>
+                        <input type="color" id="head" name="" value="#e66465">
+                    </div>
+                </div>
+                <hr class="w-11/12 mx-auto decoration-yellow-800">
+                
+
+                <div class="mt-3 mb-8">
+                    <textarea id="textarea-field" class="peer block min-h-[auto] h-96 w-11/12 mx-auto border-0 px-3 py-[0.32rem] resize-y h-3/4" name=""
+                        ></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/utilities.js"></script>
+</body>
+
+</html>
